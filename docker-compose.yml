@@ -1,0 +1,8 @@
+version: "2.0"
+services:
+  updater:
+    build: .
+    volumes:
+      - ./update-maxmind.sh:/update-maxmind.sh
+      - ./entrypoint.sh:/entrypoint.sh
+
